@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Connexion</title>
+</head>
+
+<body>
+
+<div class="contenant">
+<header>
+    <h1>Connexion</h1>
+</header>
+
+<!-- FORMULAIRE -->
+<form onsubmit="return verifierConnexion()" class="box">
+
+    <!-- Champ Nom -->
+    <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" required>
+    </div>
+
+    <!-- Champ Prénom -->
+    <div>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" required>
+    </div>
+
+    <!-- Champ Mot de passe -->
+    <div>
+        <label for="mdp">Mot de passe :</label>
+        <input type="password" id="mdp" required>
+    </div>
+
+    <!-- BOUTON -->
+    <div class="bouton">
+        <button class="login2" type="submit">Connexion</button>
+    </div>
+</div>
+</form>
+
+<!-- SCRIPT JS -->
+<script>
+function verifierConnexion() {
+    // Récupération des valeurs des champs
+    const nom = document.getElementById("nom").value;
+    const prenom = document.getElementById("prenom").value;
+    const mdp = document.getElementById("mdp").value;
+
+    // Vérification du mot de passe
+    if (mdp === "NSI") {
+        // Redirection vers la page connectée
+        window.location.href = "indexlogged.html?nom=" 
+            + encodeURIComponent(nom) 
+            + "&prenom=" 
+            + encodeURIComponent(prenom);
+    } else {
+        // Redirection vers une page d'erreur
+        window.location.href = "error.html";
+    }
+
+    return false; // empêche le formulaire de recharger la page
+}
+</script>
+
+</body>
+</html>

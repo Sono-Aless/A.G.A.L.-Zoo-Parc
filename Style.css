@@ -1,0 +1,155 @@
+html{ 
+background-color: #0B5345
+}
+.header{
+	height: 90px;
+	padding: 10px 20px;
+}
+.logo{
+	width: 200px
+}
+.login{
+	background-color: #0B5345;
+	position: relative;
+	left: 90%;
+	top: -260px;
+	border: none;
+	cursor: pointer;
+	border-radius: 12px;		
+}
+.login:hover{ 
+background-color: #083D32;
+}
+.login:active{
+	transform: scale(0.9);
+}
+.retour{
+	background-color: #FFF8E7;
+	position: relative;
+	border: none;
+	cursor: pointer;
+	border-radius: 12px;		
+}
+.retour:active{
+	transform: scale(0.9);
+}
+
+.Nomzoo{
+color:#0B5345;
+text-align: center;
+position: relative;
+top: -180px;
+font-size: 50px;
+} 	
+p{
+	color: white;
+}
+h3{
+	color: #CBDF90;
+}
+h2{
+	color: #CBDF90;
+}
+.TaigaDes{
+	float: left;
+}
+.PhoTai{
+	float: right;
+}
+.MontDes{
+	float: right;
+}
+.PhoMont{
+	float: left;
+	padding-top: 16rem;
+}
+.PhoMontlog{
+	float: left;
+	padding-top: 16rem;
+}
+.PhoTailog{
+	float: right;
+}
+.PhoMontlog:hover{
+	transform: scale(1.02);
+}
+.PhoTailog:hover{
+	transform: scale(1.02);
+}
+table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 1em auto;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0B5345;
+      color: #CBDF90;
+    }
+
+    ul {
+      width: 60%;
+      margin: 1em auto;
+      background-color: #CBDF90;
+      padding: 1em;
+      border-radius: 10px;
+      list-style-type: square; 
+    }
+    li {
+      color: #0B5345;
+    }
+.contact-list p {
+  position: relative;
+  padding-left: 15px;   
+  margin: 5px 0;
+}
+
+.contact-list p::before {
+  content: "•";         
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 18px;     
+  line-height: 1;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;                              
+  justify-items: center;
+}
+
+.gallery img {
+  width: 450px;      
+  height: 400px;      
+  object-fit: cover;  
+  border-radius: 10px; 
+}	
+.contenant{
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box{
+	background: #ffffff;
+	padding: 25px 35px;
+	border-radius: 12px;
+	width: 320px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+label{
+	font-weight: bold;
+}
+button:hover {
+	background-color: #0B5345;
+}
